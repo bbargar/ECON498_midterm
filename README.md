@@ -113,4 +113,5 @@ Last, I did not use deeplink for this code. While I completely understand and ac
 
 # Data analysis
 
-
+All of my data analysis graphs and regressions were done through Microsoft Excel. 
+To view my data analysis, click [here](https://github.com/bbargar/ECON498_midterm/blob/main/Data%20Analysis.pdf)

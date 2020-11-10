@@ -1,13 +1,21 @@
 # ECON498_midterm
 [Introduction](#Introduction)
+
 [Installation](#Installation)
-[Usage and Steps](#Usage and Steps)
-[Code Logic](#Code Logic)
-[Customization of Request Codes](#Customization of Request Codes)
-[Customization of Parse Codes](#Customization of Parse Codes)
-[CSV and HTML Explained](#CSV and HTML Explained)
+
+[Usage and Steps](#Usage-and-Steps)
+
+[Code Logic](#Code-Logic)
+
+[Customization of Request Codes](#Customization-of-Request-Codes)
+
+[Customization of Parse Codes](#Customization-of-Parse-Codes)
+
+[CSV and HTML Explained](#CSV-and-HTML-Explained)
+
 [Imperfections](#Imperfections)
-[Data Analysis](#Data Analysis)
+
+[Data Analysis](#Data-Analysis)
 
 # Introduction
 

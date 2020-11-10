@@ -99,6 +99,12 @@ Each dataset contains unique information to the files that were parsed. The info
 
 # Imperfections
 
+Understanding the imperfections of this code is important. The first and biggest imperfection to the parsed datasets was that I only parsed 200 files from each website, which was only a fraction of the total amount of files that were requested. Since I took the first 200 files, the timestamps are relatively close (meaning the 200th file timestamp is not much further than the 1st file timestamp). This means that these files likely showed a smaller discrepency between the websites than was actually true. Parsing every one of the files I requested would provide a more accurate representation of data comparison. 
+
+Second, even though I spent a lot of time debugging this code, I will be first in line to say that it is not perfect. There are likely more bugs which hender this code's performance. I found that generally speaking, the code has the right logic, but I cannot promise the code to work perfectly. 
+
+Last, I did not use deeplink for this code. While I completely understand and acknowledge the benefits of using deeplink, I found all of the information I needed from the initial request/parse. To find more information in your use of this code, you may find that you need to use deeplink: see `coinmarketcap_midterm_deeplink.py` to see an example code that runs successfully on the files I gathered.
+
 # Data analysis
 
 

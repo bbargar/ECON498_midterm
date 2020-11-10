@@ -23,7 +23,11 @@ This code is meant for web scrapping two different websites. The websites are [c
 
 # Installation
 
+To install this code, run `pip install git +git:https://github.com/bbargar/ECON498_midterm.git` in your terminal.
 
+Other codes to have installed, run this code:
+
+`python3 pip install BeatufilSoup numpy pandas request`
 
 # Usage and Steps
 

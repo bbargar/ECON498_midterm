@@ -85,7 +85,17 @@ For `coingecko_midterm_parse.py`, if you would like to request something else, f
 | new_html_files_cgecko | contains the first 200 files from html_files_cgecko |
 | parsed_files_cgecko | contains dataset `coingecko_midterm3_dataset.csv` |
 
-
+Each dataset contains unique information to the files that were parsed. The information that was consistently found between both datasets are as follows:
+- `price`: currency price for coinmarketcap
+- `current_price`: currency price for coingecko
+- `name`: currency name for both websites
+- `symbol`: currency symbol for both websites
+- `logo`: currency logo for coinmarketcap
+- `image`: currency logo for coingecko
+- `marketcap`: marketcap for coinmarketcap
+- `market_cap`: marketcap for coingecko
+- `24hr`: price change over 24hrs for coinmarketcap
+- `price_change_24h`: price change over 24hrs for coingecko
 
 # Imperfections
 

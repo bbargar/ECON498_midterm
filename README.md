@@ -76,6 +76,17 @@ For `coingecko_midterm_parse.py`, if you would like to request something else, f
 
 # CSV and HTML explained
 
+| Name | Description |
+| --- | --- |
+| html_files_cmc | contains all requested files from coinmarketcap |
+| new_html_files_cmc | contains the first 200 files from html_files_cmc |
+| parsed_files_cmc | contains dataset `coinmarketcap_midterm2_dataset.csv` |
+| html_files_cgecko | contains all requested files from coingecko |
+| new_html_files_cgecko | contains the first 200 files from html_files_cgecko |
+| parsed_files_cgecko | contains dataset `coingecko_midterm3_dataset.csv` |
+
+
+
 # Imperfections
 
 # Data analysis

@@ -29,7 +29,7 @@ It is necessary to understand what is happening when each code runs. This is exp
 
 `coingecko_request.py`: will request the first 5 pages from [coingecko](coingecko.com) for the same length of time as coinmarketcap and save to folder name `html_files_cgecko`. Unlike coinmarketcap, this request code uses the API of coingecko due to a request error from coingecko's website. This request code looks slightly different, but runs under the same logic as `coinmarketcap_request.py`. Because this code is requested as API, each file saves as a json array of objects.
 
-`coingecko_midterm_parse.py`: With the same problem of computer memory, I transfered the first 200 files from `html_files_cgecko` into a folder named `new_html_files_cgecko`. This code then parsed information from each file in `new_html_files_cgecko` and saved this information as a dataset named `coingecko_midterm3_dataset.csv` in the folder named `parsed_files_cgecko`. 
+`coingecko_midterm_parse.py`: With the same problem of computer memory, I transfered the first 200 files from `html_files_cgecko` into a folder named `new_html_files_cgecko`. This code was written as a json parse code to read the files which read as json arrays. This code then parsed information from each file in `new_html_files_cgecko` and saved this information as a dataset named `coingecko_midterm3_dataset.csv` in the folder named `parsed_files_cgecko`. 
 
 # Customization of Request Codes
 
@@ -41,6 +41,21 @@ Each of the request codes can be tailored to what the user would like to find. F
 It is also important to note here that you may receive an request error from the `coinmarketcap_request.py` code. If this is the case and it is happening often, you can add a `try: except:` code which encapsulates the `for` loop to pass over any currency/page that is giving an error. This was not happening often enough for me to add this to my code.
 
 # Customization of Parse Codes
+
+Each of these parse codes are incredibly customizable. These codes were written to gather the data that I wanted from each requested file, but there was a lot of data that I did not want. 
+
+For `coinmarketcap_midterm_parse.py`, if you would like to request something other than what is in the code then follow the same logic as what is in the if statement:
+
+```
+currency_name = currency_columns[2].find("p").text
+```
+
+For `coingecko_midterm_parse.py`, if you would like to request something else, follow the same logic. Because the files were gathered as a json array of objects, this code finds the key words that I needed from each object in the json array. To add `total_volume` for instance, the code would look like:
+
+```
+'total_volume': json_data[indexing]['total_volume']
+```
+
 
 # CSV and HTML explained
 

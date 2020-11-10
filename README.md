@@ -23,8 +23,7 @@ After requesting the data, run `coinmarketcap_midterm_parse.py` and then run `co
 
 It is necessary to understand what is happening when each code runs. This is explained as follows:
 
-`coinmarketcap_request.py`: will request each of the first 5 pages from [coinmarketcap](coinmarketcap.com) every 15 minutes, for a 48 hour long window. 
-- All of the files this code gathers will save under folder name `html_files_cmc`. 
+`coinmarketcap_request.py`: will request each of the first 5 pages from [coinmarketcap](coinmarketcap.com) every 15 minutes, for a 48 hour long window. All of the files this code gathers will save under folder name `html_files_cmc`. 
 
 `coinmarketcap_midterm_parse.py`: Because my computer is slow, and the request code brought so much data, I transfered the first 200 files in `html_files_cmc` to a new folder named `new_html_files_cmc`. This is only neccessary if you receive a memory error from your terminal. Following this, this code will parse information from each file in `new_html_files_cmc` and save this parsed information as a dataset named `coinmarketcap_midterm2_dataset.csv` under the folder name `parsed_files_cmc`.
 
@@ -32,6 +31,21 @@ It is necessary to understand what is happening when each code runs. This is exp
 
 `coingecko_midterm_parse.py`: With the same problem of computer memory, I transfered the first 200 files from `html_files_cgecko` into a folder named `new_html_files_cgecko`. This code then parsed information from each file in `new_html_files_cgecko` and saved this information as a dataset named `coingecko_midterm3_dataset.csv` in the folder named `parsed_files_cgecko`. 
 
+# Customization of Request Codes
 
+Each of the request codes can be tailored to what the user would like to find. For instance, if instead of requesting 5 pages from each website (which would request 500 cryptocurrencies), you wanted to only request 1 page (100 currencies). To do this, you can delete or comment the code that applies to pages 2-5, or vice versa. 
+
+- time.sleep()
+  - Each request code also has a time.sleep() that tailors to what I needed from this project. In my case, I needed the code to run every 15 minutes (192) for 48 hours (840). This can be altered in any way to how the user requires it.
+  
+It is also important to note here that you may receive an request error from the `coinmarketcap_request.py` code. If this is the case and it is happening often, you can add a `try: except:` code which encapsulates the `for` loop to pass over any currency/page that is giving an error. This was not happening often enough for me to add this to my code.
+
+# Customization of Parse Codes
+
+# CSV and HTML explained
+
+# Imperfections
+
+# Data analysis
 
 

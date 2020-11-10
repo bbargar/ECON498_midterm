@@ -26,6 +26,12 @@ It is necessary to understand what is happening when each code runs. This is exp
 `coinmarketcap_request.py`: will request each of the first 5 pages from [coinmarketcap](coinmarketcap.com) every 15 minutes, for a 48 hour long window. 
 - All of the files this code gathers will save under folder name `html_files_cmc`. 
 
-`coinmarketcap_midterm_parse.py`: will parse information from each file in `html_files_cmc` and save this parsed information as a dataset named `coinmarketcap_midterm2_dataset.csv` under the folder name `parsed_files_cmc`.
+`coinmarketcap_midterm_parse.py`: Because my computer is slow, and the request code brought so much data, I transfered the first 200 files in `html_files_cmc` to a new folder named `new_html_files_cmc`. This is only neccessary if you receive a memory error from your terminal. Following this, this code will parse information from each file in `new_html_files_cmc` and save this parsed information as a dataset named `coinmarketcap_midterm2_dataset.csv` under the folder name `parsed_files_cmc`.
+
+`coingecko_request.py`: will request the first 5 pages from [coingecko](coingecko.com) for the same length of time as coinmarketcap and save to folder name `html_files_cgecko`. Unlike coinmarketcap, this request code uses the API of coingecko due to a request error from coingecko's website. This request code looks slightly different, but runs under the same logic as `coinmarketcap_request.py`. Because this code is requested as API, each file saves as a json array of objects.
+
+`coingecko_midterm_parse.py`: With the same problem of computer memory, I transfered the first 200 files from `html_files_cgecko` into a folder named `new_html_files_cgecko`. This code then parsed information from each file in `new_html_files_cgecko` and saved this information as a dataset named `coingecko_midterm3_dataset.csv` in the folder named `parsed_files_cgecko`. 
+
+
 
 
